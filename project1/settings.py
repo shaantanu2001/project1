@@ -129,6 +129,18 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'shaantanu2001@gmail.com'
 EMAIL_HOST_PASSWORD = 'Shaantanu@123'
 
+
+TWILIO_ACCOUNT_SID = "AC261ead205a482cda3da5b0f2c82bfb16"
+TWILIO_AUTH_TOKEN = "ae0aa933d9b55bf62f45d250e47d1762"
+TWILIO_NUMBER = "+19086635460"
+SMS_BROADCAST_TO_NUMBERS = [ 
+    "+919518561273", # use the format +19735551234
+    "", 
+    "", 
+]
+
+SMS_BACKEND = 'sms.backends.filebased.SmsBackend'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 

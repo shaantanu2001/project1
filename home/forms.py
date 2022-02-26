@@ -16,5 +16,5 @@ class StudentForm(forms.ModelForm):
 class Userform(forms.ModelForm):
     class Meta:
         model = User
-        phone = forms.CharField(max_length=10)
+        help_texts = {'username':None}
         exclude = {'is_active','is_staff', 'user_permissions', 'groups', 'is_superuser' ,'last_login', "date_joined"}

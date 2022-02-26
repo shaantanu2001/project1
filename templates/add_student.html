@@ -42,11 +42,13 @@ Adding Students
         <div class="container" style="padding: 0px 20px 20px 20px;">
         <h1><u>Add New Student </u></h1>
         
-       
-        <form method="POST" class="post-form" enctype="multipart/form-data">  
-            {% csrf_token %}  
+      
+        <form method="POST"  enctype="multipart/form-data" style="border: 1px solid black; margin: 2% ; padding:12%; border-radius:1%;">  
+            {% csrf_token %} 
+            
               {{form_name.as_table}}
-            <button type="submit" class="save btn btn-primary test" >Submit</button>  
+            <button type="submit" class="save btn btn-primary test" >Submit</button> 
+             
         </form> 
                 
         </div>
